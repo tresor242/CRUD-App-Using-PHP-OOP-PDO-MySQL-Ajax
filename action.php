@@ -11,8 +11,8 @@ if (isset($_POST['action']) && $_POST['action'] == "view") {
         <thead>
             <tr class="text-center">
                 <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th>Nom</th>
+                <th>Prenom</th>
                 <th>E-Mail</th>
                 <th>Phone</th>
                 <th>Action</th>
@@ -46,8 +46,8 @@ if (isset($_POST['action']) && $_POST['action'] == "view") {
     }
     else
     {
-        echo '<h3 class="text-center text-secondary mt-5">:(No any user
-        present in the database!</h3>';
+        echo '<h3 class="text-center text-secondary mt-5">:(Aucun utilisateur
+        présent dans la base de données!</h3>';
     }
 }
 
@@ -115,8 +115,8 @@ if (isset($_POST['action']) && $_POST['action'] == "update") {
     echo '<table border="1">';
     echo '<tr class="text-center">
                 <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th>Nom</th>
+                <th>Prenom</th>
                 <th>E-Mail</th>
                 <th>Phone</th>
                 <th>Action</th>

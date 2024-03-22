@@ -19,13 +19,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#">A propos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
@@ -38,20 +38,20 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h4 class="text-center text-danger font-weight-normal my-3">CRUD
-                Application Using Bootstrap 4, PHP-OOP, PDO-MYSQL, Ajax, DataTable & 
+            <h4 class="text-center text-danger font-weight-normal my-3">
+                Application CRUD Utilisant Bootstrap 4, PHP-OOP, PDO-MYSQL, Ajax, DataTable & 
                 SweetAlert 2
             </h4>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-6">
-            <h4 class="mt-2 text-primary">All users in database!</h4>
+            <h4 class="mt-2 text-primary">Tous les Utiliseurs!</h4>
         </div>
         <div class="col-lg-6">
             <button type="button" class="btn btn-primary m-1 float-right" data-toggle="modal" data-target="#addModal"><i 
-            class="fas fa-user-plus fa-lg"></i>&nbsp;&nbsp;Add New User</button>
-            <a href="action.php?export=excel" class="btn btn-success m-1 float-right"><i class="fas fa-table fa-lg"></i>&nbsp;&nbsp; Export to Excel</a>
+            class="fas fa-user-plus fa-lg"></i>&nbsp;&nbsp;Ajouter un nouvel utilisateur</button>
+            <a href="action.php?export=excel" class="btn btn-success m-1 float-right"><i class="fas fa-table fa-lg"></i>&nbsp;&nbsp; Exporter en Excel</a>
         </div>
     </div>
     <hr class="my-1">
@@ -70,7 +70,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add New User</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter un nouvel utilisateur</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -104,7 +104,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Editer un Utiliseur</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -174,7 +174,7 @@
                       // console.log(response);
                       
                        Swal.fire({
-                        title: 'User added successfully!',
+                        title: 'Utilisateur ajoute avec succes!',
                         type: 'success'
                        })
                        $("#addModal").modal('hide');
@@ -223,7 +223,7 @@
                       // console.log(response);
                       
                        Swal.fire({
-                        title: 'User updated successfully!',
+                        title: 'Utilisateur modifie avec succes!',
                         type: 'success'
                        })
                        $("#editModal").modal('hide');
@@ -242,13 +242,13 @@
               var tr = $(this).closest('tr');
               del_id = $(this).attr('id');
               Swal.fire({
-                title: "Are you sure?",
-                text: "You won't be able to revert this!",
+                title: "Etes vous sure?",
+                text: "Vous ne pourrez pas revenir en arrière",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#3085d6",
                 cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, delete it!"
+                confirmButtonText: "Oui, Supprimez!"
               }).then((result) => {
                 if (result.isConfirmed) {
                   $.ajax({
@@ -260,7 +260,7 @@
                       tr.css('background-color', '#ff6666');
                       Swal.fire(
                         'Deleted!',
-                        'User deleted successfully!',
+                        'Utilisateur supprimé avec succès!',
                         'success!',
                     )
                       showAllUsers();
