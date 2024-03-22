@@ -78,10 +78,10 @@
       <div class="modal-body px-4">
         <form action="" method="post" id="form-data">
             <div class="form-group">
-                <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+                <input type="text" name="fname" class="form-control" placeholder="Nom" required>
             </div>
             <div class="form-group">
-                <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+                <input type="text" name="lname" class="form-control" placeholder="Prenom" required>
             </div>
             <div class="form-group">
                 <input type="email" name="email" class="form-control" placeholder="E-Mail" required>
@@ -90,7 +90,7 @@
                 <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
             </div>
             <div class="form-group">
-                <input type="submit" name="insert" id="insert" value="Add User" class="btn btn-danger btn-block">
+                <input type="submit" name="insert" id="insert" value="Ajouter un utilisateur" class="btn btn-danger btn-block">
             </div>
         </form>
       </div>
@@ -113,10 +113,10 @@
         <form action="" method="post" id="edit-form-data">
           <input type="hidden" name="id" id="id">
             <div class="form-group">
-                <input type="text" name="fname" class="form-control" placeholder="First Name" required id="fname">
+                <input type="text" name="fname" class="form-control" placeholder="Nom" required id="fname">
             </div>
             <div class="form-group">
-                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required>
+                <input type="text" name="lname" id="lname" class="form-control" placeholder="Prenom" required>
             </div>
             <div class="form-group">
                 <input type="email" name="email" id="email" class="form-control" placeholder="E-Mail" required>
@@ -125,7 +125,7 @@
                 <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" required>
             </div>
             <div class="form-group">
-                <input type="submit" name="update" id="update" value="Update User" class="btn btn-primary btn-block">
+                <input type="submit" name="update" id="update" value="Modifier un utilisateur" class="btn btn-primary btn-block">
             </div>
         </form>
       </div>
@@ -289,8 +289,8 @@
                       Swal.fire({
                         title: '<strong>User Info : ID('+data.id+')</strong>',
                         type: 'info',
-                        html: '<b>First Name : </b>'+data.first_name+ 
-                              '<br><b>Last Name : </b>'+data.last_name+
+                        html: '<b>Nom : </b>'+data.first_name+ 
+                              '<br><b>Prenom : </b>'+data.last_name+
                               '<br><b>Email : </b>'+data.email+
                               '<br><b>Phone : </b>'+data.phone,
                               showCancelButton: true,
